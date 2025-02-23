@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="#FFFFFF">
+
+<!-- Title -->
+<TextView
+    android:id="@+id/tvHomeTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Auto Silenter"
+    android:textSize="24sp"
+    android:textColor="#6200EE"
+    android:layout_gravity="center_horizontal"
+    android:padding="8dp" />
+
+<!-- On/Off Buttons -->
+
+    <!-- Image Buttons for Saved & Edit Locations -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#6200EE"
+            android:text="On"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnOff"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#6200EE"
+            android:text="Off"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="319dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/SavedLocations"
+            android:layout_width="56dp"
+            android:layout_height="364dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Saved Locations"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img" />
+
+        <ImageButton
+            android:id="@+id/imgEditLocation"
+            android:layout_width="65dp"
+            android:layout_height="364dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Edit Locations"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btndemo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="#6200EE"
+            android:text="demoo"
+            android:textColor="#FFFFFF" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
