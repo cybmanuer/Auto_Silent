@@ -1,0 +1,97 @@
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+
+    <application
+
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutoSilent_madapp"
+        tools:targetApi="31">
+
+
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add All CLASS  Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".addlocation"
+            android:exported="true" />
+
+        <activity
+            android:name=".SavedLocationsActivity"
+            android:exported="true" />
+
+<!--        <activity android:name=".MapActivity"-->
+<!--            android:exported="true" />-->
+
+        <activity android:name=".DatabaseHelper"
+            android:exported="true" />
+
+        <activity android:name=".MapActivity" />
+
+<!--        <activity android:name=".LocationService" android:exported="true" />-->
+
+
+
+        <service android:name=".LocationService" android:enabled="true" android:exported="false"  android:foregroundServiceType="location" />
+
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_api_key" />
+
+        <receiver android:name=".NotificationReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.autosilent_madapp.ACTION_START_MONITORING" />
+                <action android:name="com.example.autosilent_madapp.ACTION_STOP_MONITORING" />
+            </intent-filter>
+        </receiver>
+
+
+
+    </application>
+
+
+
+
+
+
+
+</manifest>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EDE7F6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Locations"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp"/>
+
+    <ListView
+        android:id="@+id/listViewSavedLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="10dp"/>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EDE7F6">
+
+    <TextView
+        android:id="@+id/texthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ADD LOCATIONS "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/buttonAddLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7B1FA2"
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        android:text="Add Current Location"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/AddLocationfrommap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#7B1FA2"
+        android:padding="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Select Location From map"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+
+<!--    <ListView-->
+<!--        android:id="@+id/listViewLocations"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:dividerHeight="10dp"/>-->
+</LinearLayout>
